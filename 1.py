@@ -8,4 +8,19 @@ Hints:
 Consider use range(#begin, #end) method
 """
 
-print('heloo world')
+seven = []
+for a in range(2000,3201):
+    if (a%7 == 0):
+        seven.append(a)
+
+five = []
+for b in range(2000,3201):
+    if (b%5 == 0):
+        five.append(b)
+
+result = []
+for c in seven:
+    if c not in five:
+        result.append(c)
+
+print(result)
