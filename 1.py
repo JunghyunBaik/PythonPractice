@@ -22,5 +22,9 @@ result = []
 for c in seven:
     if c not in five:
         result.append(c)
+return_string = '' 
 
-print(result)
+for res in result:
+    return_string += str(res) + ', '
+
+print(return_string[:-2])
