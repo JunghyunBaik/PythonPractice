@@ -1,3 +1,4 @@
+'''
 Question:
 Write a program that calculates and prints the value according to the given formula:
 Q = Square root of [(2 * C * D)/H]
@@ -13,4 +14,13 @@ The output of the program should be:
 Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
 In case of input data being supplied to the question, it should be assumed to be a console input. 
+'''
+import math
+num = input('put your number of D : ').split(',')
 
+square =[]
+for D in num:
+    Q = round(math.sqrt(( 2 * 50 * int(D) ) / 30 ))
+    square.append(Q)
+
+print(square)
